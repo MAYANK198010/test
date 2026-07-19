@@ -90,12 +90,11 @@
               "Packaging"
             ],
             "makesOffer": [
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Book Printing" } },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Book Binding" } },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Offset Printing" } },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Printing" } },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Finishing" } },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Packaging" } }
+              { "@type": "Offer", "url": "https://www.divine-imprints.com/book-printing.html", "itemOffered": { "@type": "Service", "name": "Book Printing" } },
+              { "@type": "Offer", "url": "https://www.divine-imprints.com/book-binding.html", "itemOffered": { "@type": "Service", "name": "Book Binding" } },
+              { "@type": "Offer", "url": "https://www.divine-imprints.com/offset-printing.html", "itemOffered": { "@type": "Service", "name": "Offset Printing" } },
+              { "@type": "Offer", "url": "https://www.divine-imprints.com/finishing.html", "itemOffered": { "@type": "Service", "name": "Finishing" } },
+              { "@type": "Offer", "url": "https://www.divine-imprints.com/packaging.html", "itemOffered": { "@type": "Service", "name": "Packaging" } }
             ]
           },
           {
@@ -144,17 +143,17 @@
         </a>
 
         <nav class="navigation" aria-label="Primary navigation">
-          <a href="#">Home</a>
+          <a href="index.html">Home</a>
           <span class="dot" aria-hidden="true">&bull;</span>
           <span class="nav-item services-nav">
-            <a href="#services">Services</a>
+            <a href="book-printing.html">Services</a>
             <button class="nav-caret" type="button" aria-label="Open services menu"></button>
             <span class="service-dropdown" aria-label="Services submenu">
-              <a href="#services">Book Printing</a>
-              <a href="#services">Book Binding</a>
-              <a href="#services">Offset Printing</a>
-              <a href="#services">Finishing</a>
-              <a href="#services">Packaging</a>
+              <a href="book-printing.html">Book Printing</a>
+              <a href="book-binding.html">Book Binding</a>
+              <a href="offset-printing.html">Offset Printing</a>
+              <a href="finishing.html">Finishing</a>
+              <a href="packaging.html">Packaging</a>
             </span>
           </span>
           <span class="dot" aria-hidden="true">&bull;</span>
@@ -172,63 +171,33 @@
           <strong>Imprints</strong>
         </h1>
       </section>
-
-      <section class="info-panel services-panel" id="services" aria-labelledby="services-title">
-        <a class="panel-close" href="#" aria-label="Close services panel">x</a>
-        <h2 id="services-title">Services</h2>
-        <div class="panel-grid">
-          <article id="book-printing">
-            <h3>Book Printing</h3>
-            <p>Textbooks, magazines, annual reports, brochures, catalogues, manuals, diaries, and registers.</p>
-          </article>
-          <article id="book-binding">
-            <h3>Book Binding</h3>
-            <p>Hard binding, soft binding, perfect binding, center stitch, and thread sewing for durable books.</p>
-          </article>
-          <article id="offset-printing">
-            <h3>Offset Printing</h3>
-            <p>Consistent commercial and educational printing for publishers, institutions, and businesses.</p>
-          </article>
-          <article id="finishing">
-            <h3>Finishing</h3>
-            <p>Lamination, UV coating, spot UV, foiling, embossing, and die cutting for polished output.</p>
-          </article>
-          <article id="packaging">
-            <h3>Packaging</h3>
-            <p>Cartons, labels, corrugated boxes, and custom packaging material for bulk requirements.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="info-panel vision-panel" id="vision" aria-labelledby="vision-title">
-        <a class="panel-close" href="#" aria-label="Close vision panel">x</a>
-        <h2 id="vision-title">Our Vision</h2>
-        <p>
-          To be a trusted printing and book manufacturing partner known for precision, quality, timely delivery, and reliable service.
-        </p>
-      </section>
-
-      <section class="info-panel about-panel" id="about" aria-labelledby="about-title">
-        <a class="panel-close" href="#" aria-label="Close about panel">x</a>
-        <h2 id="about-title">About Us</h2>
-        <p>
-          Divine Imprints, Rajiv Book Binding House, supports publishers, schools, colleges, businesses, and organizations with
-          professional printing, binding, finishing, and packaging solutions in Delhi.
-        </p>
-      </section>
-
-      <section class="info-panel contact-panel" id="contact" aria-labelledby="contact-title">
-        <a class="panel-close" href="#" aria-label="Close contact panel">x</a>
-        <h2 id="contact-title">Contact Us</h2>
-        <address>
-          Divine Imprints, Rajiv Book Binding House<br />
-          Delhi, India<br />
-          GSTIN: 07ACUPA7438A1ZP
-        </address>
-      </section>
     </main>
 
-    <footer class="site-footer" aria-labelledby="footer-contact-title">
+    <section class="home-section" id="vision" aria-labelledby="vision-title">
+      <div class="section-inner">
+        <p class="section-kicker">Our Vision</p>
+        <h2 id="vision-title">Reliable printing and book manufacturing for every serious publisher.</h2>
+        <p>
+          Divine Imprints works to be a trusted production partner known for precise printing, durable binding, consistent finishing,
+          timely delivery, and long-term service relationships.
+        </p>
+      </div>
+    </section>
+
+    <section class="home-section about-section" id="about" aria-labelledby="about-title">
+      <div class="section-inner two-column">
+        <div>
+          <p class="section-kicker">About Us</p>
+          <h2 id="about-title">Divine Imprints, Rajiv Book Binding House</h2>
+        </div>
+        <p>
+          We support publishers, schools, colleges, businesses, government departments, and organizations with professional book
+          printing, offset printing, binding, finishing, and packaging solutions in Delhi.
+        </p>
+      </div>
+    </section>
+
+    <footer class="site-footer" id="contact" aria-labelledby="footer-contact-title">
       <div class="footer-inner">
         <div>
           <h2 id="footer-contact-title">Contact Us</h2>
